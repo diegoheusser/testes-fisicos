@@ -22,3 +22,5 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
+/aplicacao/badminton/nbproject/private/private.properties
+/aplicacao/badminton/nbproject/private/private.xml
