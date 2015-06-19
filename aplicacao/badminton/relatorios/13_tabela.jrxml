@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="13_tabela" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6adbbdd4-06be-4bf1-a989-33ba01907eed">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFAF0">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFEABF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="2eb65a09-5bb9-4a16-b440-a581eb6dff7a">
+		<parameter name="DATA_INICIAL" class="java.util.Date"/>
+		<parameter name="DATA_FINAL" class="java.util.Date"/>
+		<parameter name="ATLETA_ID" class="java.lang.Integer"/>
+		<parameter name="PROTOCOLO_ID" class="java.lang.Integer"/>
+		<parameter name="PARAMETRO" class="java.lang.String"/>
+		<queryString>
+			<![CDATA[select
+distinct e.*, trr.milisegundos
+from
+Protocolo p inner join Execucao e on p.protocoloid = e.protocoloid
+inner join tempo_reacao_regua trr on trr.tempo_reacao_regua_id = e.execucaoid
+where
+p.protocoloid = $P{PROTOCOLO_ID}
+and e.atletaid = $P{ATLETA_ID}
+and e.data between $P{DATA_INICIAL} and $P{DATA_FINAL};]]>
+		</queryString>
+		<field name="execucaoID" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="atletaID" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="protocoloID" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="hora" class="java.sql.Time">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="data" class="java.sql.Date">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="temperatura" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="tipoSuperficie" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="status" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="milisegundos" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="DATA_INICIAL" class="java.util.Date"/>
+	<parameter name="DATA_FINAL" class="java.util.Date"/>
+	<parameter name="ATLETA_ID" class="java.lang.Integer"/>
+	<parameter name="PROTOCOLO_ID" class="java.lang.Integer"/>
+	<parameter name="PARAMETRO" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" x="0" y="0" width="555" height="50" uuid="c48a0443-f3e0-45d4-bdbe-f65814c3f52e"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="b4ac5c61-df98-4518-9e62-da78e89710d9">
+						<datasetParameter name="DATA_INICIAL">
+							<datasetParameterExpression><![CDATA[$P{DATA_INICIAL}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="DATA_FINAL">
+							<datasetParameterExpression><![CDATA[$P{DATA_FINAL}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ATLETA_ID">
+							<datasetParameterExpression><![CDATA[$P{ATLETA_ID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="PROTOCOLO_ID">
+							<datasetParameterExpression><![CDATA[$P{PROTOCOLO_ID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="PARAMETRO">
+							<datasetParameterExpression><![CDATA[$P{PARAMETRO}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="58703164-a2ea-43cf-9df9-bc93c9e10c48">
+						<jr:columnHeader style="table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="00efed95-ce33-441d-878a-48074a94c482"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Data]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="3a1b1342-ea50-404b-959f-9764d7b74ca8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[new SimpleDateFormat("dd/MM/yyyy").format($F{data})]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="b78c006b-f657-41f3-b43b-a3b7abcb4095">
+						<jr:columnHeader style="table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="ca11cf5e-c8af-43a0-8dde-9f3717623066"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Hora]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="d4ea3d44-7e5a-4b1d-a91c-b23d02d8feae"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[new SimpleDateFormat("HH:mm:ss").format($F{hora})]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="21d5e21f-3a99-46a3-970c-a9183d90099a">
+						<jr:columnHeader style="table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="2ab31eef-cf55-4af6-a9b3-60bbb46521ef"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Superfície]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="dc8342d3-f15e-4e62-9f8a-00b0d4e5cd21"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{tipoSuperficie}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="5b1d3a77-d1c1-4eb1-8a49-ad38441fd646">
+						<jr:columnHeader style="table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="09ce920a-ccb8-4341-9168-c9c73de23bd3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Temperatura]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="cb2124de-5215-4edd-bc50-f8c7dde09a19"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{temperatura} + " C°"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="6efe2d29-6c2b-4ad7-98f3-672ae2c7b2da">
+						<jr:columnHeader style="table_CH" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="30" uuid="6eb73e73-2da8-4c17-919a-0a6e7059eabb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{PARAMETRO}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="39255552-989b-4658-8b24-0d0013b9c31d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{milisegundos}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="eddfeb75-c37b-4384-af7a-72ab0877a5b2">
+						<jr:columnHeader style="table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="b1d8eb3a-3ead-41d9-bb48-dae73ef71fd2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="11" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Status]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="d3b58b24-1590-4d4e-b845-6c910d738232"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{status} == 1 ? "Conluído" : "Não concluído"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="220" splitType="Stretch">
+			<lineChart>
+				<chart>
+					<reportElement x="-17" y="20" width="591" height="200" uuid="b7e217f2-4968-46c3-8c91-7a608bbf8e7a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="Table Dataset 1" uuid="c0e91b45-2a5f-43c2-adef-70a3c6bef00b">
+							<datasetParameter name="DATA_INICIAL">
+								<datasetParameterExpression><![CDATA[$P{DATA_INICIAL}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="DATA_FINAL">
+								<datasetParameterExpression><![CDATA[$P{DATA_FINAL}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="ATLETA_ID">
+								<datasetParameterExpression><![CDATA[$P{ATLETA_ID}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="PROTOCOLO_ID">
+								<datasetParameterExpression><![CDATA[$P{PROTOCOLO_ID}]]></datasetParameterExpression>
+							</datasetParameter>
+							<datasetParameter name="PARAMETRO">
+								<datasetParameterExpression><![CDATA[$P{PARAMETRO}]]></datasetParameterExpression>
+							</datasetParameter>
+							<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Atleta"]]></seriesExpression>
+						<categoryExpression><![CDATA[new SimpleDateFormat("dd/MM/yyyy").format($F{data})]]></categoryExpression>
+						<valueExpression><![CDATA[$F{milisegundos}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<linePlot>
+					<plot/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</linePlot>
+			</lineChart>
+		</band>
+	</columnFooter>
+</jasperReport>

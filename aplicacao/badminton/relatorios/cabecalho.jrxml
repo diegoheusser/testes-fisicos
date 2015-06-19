@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cabecalho" columnDirection="RTL" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f725b9a8-4dfa-4716-a9b1-680019e5c1af">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="TITULO" class="java.lang.String"/>
+	<parameter name="NOME_INSTITUICAO" class="java.lang.String"/>
+	<parameter name="DATA_INICIAL" class="java.util.Date"/>
+	<parameter name="DATA_FINAL" class="java.util.Date"/>
+	<title>
+		<band height="70">
+			<textField>
+				<reportElement x="0" y="16" width="555" height="37" forecolor="#000000" uuid="41921241-88df-4a96-b9db-3274085fe410"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TITULO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="50" width="555" height="20" uuid="ce66fb75-5022-4999-9454-454cb5db0849"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{NOME_INSTITUICAO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="0" width="191" height="20" uuid="be538ae7-ec9f-413a-b2ca-b9ccfb833e1f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Período de: " + new SimpleDateFormat("dd/MM/yyyy").format($P{DATA_INICIAL}) + " até " + new SimpleDateFormat("dd/MM/yyyy").format($P{DATA_FINAL})]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

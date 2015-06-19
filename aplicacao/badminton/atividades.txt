@@ -1,0 +1,10 @@
+- teste do hexagono registrar as duas tentativas e registrar a maior
+- procurar classificação dos protocolos: agilidade em quadra
+
+- agenda não deixar  apagar quando tiver uma execução concluida
+
+- terminar os relatórios
+
+http://www.brianmac.co.uk/flextest4.htm
+http://www.brianmac.co.uk/hexagonal.htm
+

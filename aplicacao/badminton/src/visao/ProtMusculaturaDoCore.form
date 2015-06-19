@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+        <TitledBorder title="Musculatura do Core"/>
+      </Border>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" alignment="0" pref="616" max="32767" attributes="0"/>
+                  <Component id="lbLink" alignment="1" pref="616" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel2" min="-2" pref="417" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="165" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="32767" attributes="0"/>
+              <Component id="lbLink" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbLink">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Refer&#xea;ncias:&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot; text-align:justify;&quot;&gt; Badminton Australia. National Junior Program Fitness Testing Protocols. Jan 2008. Dispon&#xed;vel em:&lt;br&gt;  &lt;a href=&quot;http://www.google.com.br/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDIQFjAA&amp;url=http%3A%2F%2Fwww.sportingpulse.com%2Fget_file.cgi%3Fid%3D256038&amp;ei=n45cUba2HMPl0gHQsIDQDg&amp;usg=AFQjCNHisJnaVZZrKSJhW1PHmHuBZV8Q-w&amp;bvm=bv.44697112,d.dmQ &quot; target=_blank&gt; http://www.google.com.br/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDIQFjAA&amp;url=%3Cbr%3Ehttp%3A%2F%2Fwww.sportingpulse.com%2Fget_file.cgi%3Fid%3D256038&amp;ei=n45cU ba2H%3Cbr%3EMPl0gHQsIDQDg&amp;usg=AFQjCNHisJnaVZZrKSJhW1PHmHuBZV8Q-w&amp;bvm=bv.44697112,d.dmQ&lt;/a&gt;&lt;br&gt;  Acesso em : 04/07/2013.&lt;/p&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visao/imagens/musculaturadocore.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;b&gt;Equipamentos:&lt;/b&gt;&#xa; &lt;br&gt;&lt;br&gt;Voc&#xea; vai precisar de: superf&#xed;cie plana, rel&#xf3;gio ou cron&#xf4;metro.&#xa; &lt;br&gt;&lt;br&gt;&lt;b&gt;Descri&#xe7;&#xe3;o:&lt;/b&gt;&#xa; &lt;br&gt;&lt;br&gt;&#x2022; Posicione o rel&#xf3;gio no ch&#xe3;o, onde voc&#xea; pode v&#xea;-lo facilmente.&#xa;&#x2022; Assuma a posi&#xe7;&#xe3;o b&#xe1;sica de prancha (cotovelos no ch&#xe3;o)&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 60 segundos&#xa;&#x2022; Levante o bra&#xe7;o direito do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Devolva o seu bra&#xe7;o direito no ch&#xe3;o e levante o bra&#xe7;o esquerdo fora do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Devolva o seu bra&#xe7;o esquerdo no ch&#xe3;o e levante a perna direita do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Devolva a perna direita no ch&#xe3;o e levante a perna esquerda do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Levante a perna esquerda e o bra&#xe7;o direito do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Devolva a perna esquerda e o bra&#xe7;o direito no ch&#xe3;o&#xa;&#x2022; Levante a perna direita e bra&#xe7;o esquerdo fora do ch&#xe3;o&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 15 segundos&#xa;&#x2022; Voltar para a posi&#xe7;&#xe3;o b&#xe1;sica de prancha (cotovelos no ch&#xe3;o)&#xa;&#x2022; Mantenha essa posi&#xe7;&#xe3;o por 30 segundos&#xa; &lt;br&gt;&lt;br&gt;&lt;b&gt;Pontua&#xe7;&#xe3;o:&lt;/b&gt;&#xa; &lt;br&gt;&lt;br&gt;A an&#xe1;lise dos resultados &#xe9; compar&#xe1;-los com os resultados de testes anteriores. Espera-se que, com a forma&#xe7;&#xe3;o apropriada entre cada ensaio, a an&#xe1;lise indica uma melhoria.&#xa; &lt;/html&gt;"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

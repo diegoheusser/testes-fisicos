@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="A_atleta" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e266e75-f0eb-42b9-98bc-29091bf272a1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="TITULO" class="java.lang.String"/>
+	<parameter name="NOME_INSTITUICAO" class="java.lang.String"/>
+	<parameter name="DATA_INICIAL" class="java.util.Date"/>
+	<parameter name="DATA_FINAL" class="java.util.Date"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\safisb\\software\\badminton"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ATLETAS" class="java.lang.String"/>
+	<parameter name="PROTOCOLOS" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select
+distinct a.*
+from
+Atleta a inner join Execucao e
+on a.atletaId = e.atletaId
+where
+a.atletaId in ($P!{ATLETAS})
+and e.protocoloId in ($P!{PROTOCOLOS});]]>
+	</queryString>
+	<field name="atletaID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataNascimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="envergadura" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estatura" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="genero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lateralidade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="massaCorporal" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nivel" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="praticaSemana" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempoPratica" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="instituicao" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="historico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<subreport>
+				<reportElement x="-21" y="0" width="597" height="79" uuid="4dd86ca7-7307-4250-8ca7-e19f5b31e80b"/>
+				<subreportParameter name="TITULO">
+					<subreportParameterExpression><![CDATA[$P{TITULO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="NOME_INSTITUICAO">
+					<subreportParameterExpression><![CDATA[$P{NOME_INSTITUICAO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_INICIAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_INICIAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_FINAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_FINAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "\\relatorios\\cabecalho.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="-21" y="0" width="597" height="44" uuid="575589b7-94af-4c95-92aa-ab677f32b76a"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="245" height="20" uuid="ff3ce03f-91ad-4ba2-b8d2-ff6760a5c474"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Nome: </b>" +$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="0" width="141" height="20" uuid="a60bf700-758d-440a-ae35-d61397510b6f"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Gênero: </b>"+$F{genero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="0" width="169" height="20" uuid="68519c8f-0032-4c73-a3d1-61af1f9b7a8a"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Data de nascimento: </b>"+new SimpleDateFormat("dd/MM/yyyy").format($F{dataNascimento})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="245" height="20" uuid="fad3d11b-e689-4ff4-a566-990ad41cfd72"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Lateralidade: </b>"+$F{lateralidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="20" width="141" height="20" uuid="d9db997b-1023-47d1-9d44-6a65378795f7"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Nível: </b>"+$F{nivel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="20" width="169" height="20" uuid="f2954e9c-edf1-4ecb-b25e-2059e4b107a3"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Estatura: </b>"+$F{estatura} + " m"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="44">
+			<subreport>
+				<reportElement x="-21" y="0" width="597" height="44" uuid="09764ba1-cbe4-4276-9211-1ec6b6767751"/>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_INICIAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_INICIAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PROTOCOLOS">
+					<subreportParameterExpression><![CDATA[$P{PROTOCOLOS}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_FINAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_FINAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ATLETA_ID">
+					<subreportParameterExpression><![CDATA[$F{atletaID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "\\relatorios\\protocolo.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="0" width="324" height="20" uuid="e470a65e-fa8f-4f94-b6f9-01977d533aed"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sistema de Avaliação Física para Badminton]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20" uuid="ad8749ac-3996-4845-b990-30927cb4bd25"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="131" height="20" uuid="610acdd3-245f-4faf-a23a-756f2e103d0f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página: "+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

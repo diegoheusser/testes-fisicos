@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel2" min="-2" pref="297" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" pref="616" max="32767" attributes="0"/>
+                  <Component id="lbLink" alignment="1" pref="616" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="165" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="32767" attributes="0"/>
+              <Component id="lbLink" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visao/imagens/saltoVertical.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Equipamentos:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;Fita m&#xe9;trica ou uma parede marcada, giz para marca&#xe7;&#xe3;o de parede. Ou Vertec equipamento &#xe9; o preferido para este teste.&#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Descri&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;O atleta fica de lado a uma parede, e atinge-se com o lado mais pr&#xf3;ximo da parede. Manter os p&#xe9;s no ch&#xe3;o, o ponto em as pontas dos dedos alcan&#xe7;a na parede sem pular &#xe9; marcado. Isso &#xe9; chamado de alcance de p&#xe9;. Ent&#xe3;o o atleta se afasta da parede, e salta verticalmente t&#xe3;o elevado quanto poss&#xed;vel, utilizando ambos os bra&#xe7;os e pernas &lt;br&gt;para apoiar o corpo na proje&#xe7;&#xe3;o para cima. Na tentativa de tocar a parede no ponto mais alto do salto. A diferen&#xe7;a de dist&#xe2;ncia entre a altura, de p&#xe9; e a altura do salto &#xe9; a pontua&#xe7;&#xe3;o. O melhor de tr&#xea;s tentativas &#xe9; registrado.&#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Pontua&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;A altura do salto vertical normalmente &#xe9; registrada como a pontua&#xe7;&#xe3;o na dist&#xe2;ncia.&#xa;&lt;/html&gt;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbLink">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Refer&#xea;ncias:&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot; text-align:justify;&quot;&gt; Badminton Australia. National Junior Program Fitness Testing Protocols. Jan 2008. Dispon&#xed;vel em:&lt;br&gt;  &lt;a href=&quot;http://www.google.com.br/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDIQFjAA&amp;url=http%3A%2F%2Fwww.sportingpulse.com%2Fget_file.cgi%3Fid%3D256038&amp;ei=n45cUba2HMPl0gHQsIDQDg&amp;usg=AFQjCNHisJnaVZZrKSJhW1PHmHuBZV8Q-w&amp;bvm=bv.44697112,d.dmQ &quot; target=_blank&gt; http://www.google.com.br/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDIQFjAA&amp;url=%3Cbr%3Ehttp%3A%2F%2Fwww.sportingpulse.com%2Fget_file.cgi%3Fid%3D256038&amp;ei=n45cU ba2H%3Cbr%3EMPl0gHQsIDQDg&amp;usg=AFQjCNHisJnaVZZrKSJhW1PHmHuBZV8Q-w&amp;bvm=bv.44697112,d.dmQ&lt;/a&gt;&lt;br&gt;  Acesso em : 04/07/2013.&lt;/p&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

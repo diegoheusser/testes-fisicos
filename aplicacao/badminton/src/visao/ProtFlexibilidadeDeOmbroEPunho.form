@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+        <TitledBorder title="Teste de Flexibilidade de Ombor e Punho"/>
+      </Border>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="lbTexto" pref="619" max="32767" attributes="0"/>
+          <Component id="lbLink" pref="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="lbTexto" pref="166" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel1" pref="225" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="lbLink" min="-2" pref="100" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbTexto">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;b&gt;Objetivo:&lt;/b&gt; &#xa;&lt;br&gt;&#x2022; O objetivo deste teste &#xe9; para acompanhar o desenvolvimento do ombro do atleta e flexibilidade pulso. &#xa;&lt;br&gt;&lt;b&gt;Descri&#xe7;&#xe3;ol:&lt;/b&gt; &#xa;&lt;br&gt;&#x2022; O atleta aquece por 10 minutos&#xa;&lt;br&gt;&#x2022; O atleta segura a corda com as m&#xe3;os a frente do corpo e esticadas na largura dos ombros&#xa;&lt;br&gt;&#x2022; O atleta estende os bra&#xe7;os por cima da cabe&#xe7;a e em seguida vai abaixando os bra&#xe7;os em dire&#xe7;&#xe3;o a parte inferior das costas (permitindo que as m&#xe3;os deslizem pela corda)&#xa;&lt;br&gt;&#x2022; O assistente registra a medida em polegadas, entre os polegares do atleta.&#xa;&lt;br&gt;&#x2022; O assistente registra a medida em polegadas dos ombros do atleta&#xa;&lt;br&gt;&#x2022; O assistente subtrai a medida do ombro com a dos polegares (essa &#xe9; a medida utilizada para avalia&#xe7;&#xe3;o)&#xa;&lt;br&gt;&#x2022; O teste &#xe9; repetido 3 vezes e medida mais longa, &#xe9; utilizada para avalia&#xe7;&#xe3;o do atleta.&#xa;&lt;/html&gt;"/>
+        <Property name="verticalAlignment" type="int" value="1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbLink">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Refer&#xea;ncias:&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot; text-align:justify;&quot;&gt;Static Flexibility Test &#x2013; Shoulder. Dispon&#xed;vel em:&#xa;&lt;br&gt;  &lt;a href=&quot;http://www.brianmac.co.uk/flextest4.htm &quot; target=_blank&gt; http://www.brianmac.co.uk/flextest4.htm&lt;/a&gt;&lt;br&gt;  Acesso em : 14/08/2013.&lt;/p&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visao/imagens/fop.png"/>
+        </Property>
+        <Property name="verticalAlignment" type="int" value="1"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+        <TitledBorder title="Teste da Cegonha"/>
+      </Border>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel2" min="-2" pref="297" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" alignment="0" pref="616" max="32767" attributes="0"/>
+                  <Component id="lbLink" alignment="1" pref="616" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lbLink" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbLink">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Refer&#xea;ncias:&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot; text-align:justify;&quot;&gt;Topend Sports. Stork Balance Stand Test Dispon&#xed;vel em:&lt;br&gt;  &lt;a href=&quot;http://www.topendsports.com/testing/tests/balance-stork.htm &quot; target=_blank&gt; http://www.topendsports.com/testing/tests/balance-stork.htm&lt;/a&gt;&lt;br&gt;  Acesso em : 14/08/2013.&lt;/p&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visao/imagens/cegonha.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Equipamentos:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;Superf&#xed;cie plana e antiderrapante, cron&#xf4;metro, papel e l&#xe1;pis.&#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Descri&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;Retirar os sapatos e colocar as m&#xe3;os nos quadris, em seguida, posicione o p&#xe9; n&#xe3;o sustent&#xe1;vel contra o joelho de dentro da perna de apoio. O sujeito &#xe9; dado um minuto para praticar o equil&#xed;brio. O sujeito levanta o calcanhar para equilibrar sobre a ponta do p&#xe9;. O cron&#xf4;metro &#xe9; iniciado quando o calcanhar &#xe9; levantado do ch&#xe3;o. O cron&#xf4;metro &#xe9; parado se:&#xa;&lt;br&gt;- Se qualquer uma das m&#xe3;os sa&#xed;rem dos quadris.&#xa;&lt;br&gt;- Se o p&#xe9; de apoio mover ou saltar em qualquer dire&#xe7;&#xe3;o.&#xa;&lt;br&gt;- Se o p&#xe9; n&#xe3;o sustent&#xe1;vel perde o contato com o joelho.&#xa;&lt;br&gt;- Se o calcanhar do p&#xe9; de apoio tocar o ch&#xe3;o.&#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Pontua&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;O tempo total em segundos &#xe9; gravado. A pontua&#xe7;&#xe3;o &#xe9; a melhor de tr&#xea;s tentativas.&#xa;&lt;/html&gt;"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

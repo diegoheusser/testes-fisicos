@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="protocolo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dc25d110-88c9-4781-ad3c-15afdc831362">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#333333"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFF0">
+		<box>
+			<pen lineWidth="0.5" lineColor="#333333"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFFFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#333333"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#333333"/>
+		</box>
+	</style>
+	<parameter name="DATA_INICIAL" class="java.util.Date"/>
+	<parameter name="DATA_FINAL" class="java.util.Date"/>
+	<parameter name="ATLETA_ID" class="java.lang.Integer"/>
+	<parameter name="PROTOCOLOS" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\safisb\\software\\badminton"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select
+distinct p.*
+from
+Protocolo p inner join Execucao e
+on p.protocoloId = e.protocoloId
+where
+e.atletaId = $P{ATLETA_ID}
+and p.protocoloId in ($P!{PROTOCOLOS});]]>
+	</queryString>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="protocoloID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="unidade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="parametro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="49" y="0" width="506" height="20" uuid="cd6b1f9f-76a5-42a4-9564-f9eea6a919cf"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Nome: </b>"+$F{nome}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="49" height="40" uuid="d0c80465-9c17-4abe-b5f2-f492d00471f4"/>
+				<imageExpression><![CDATA["E:\\badminton\\software\\badminton\\src\\visao\\imagens\\protocolos.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="49" y="20" width="506" height="20" uuid="23db339c-0dcb-44b7-b89f-42041e56e95e"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<b>Tipo: </b>"+$F{tipo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="50">
+			<subreport>
+				<reportElement x="-19" y="0" width="574" height="50" uuid="5e52697c-ed13-4aaf-b3f6-639f6971a1c9"/>
+				<subreportParameter name="PROTOCOLO_ID">
+					<subreportParameterExpression><![CDATA[$F{protocoloID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_INICIAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_INICIAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="PARAMETRO">
+					<subreportParameterExpression><![CDATA[$F{parametro}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DATA_FINAL">
+					<subreportParameterExpression><![CDATA[$P{DATA_FINAL}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ATLETA_ID">
+					<subreportParameterExpression><![CDATA[$P{ATLETA_ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "\\relatorios\\" + $F{protocoloID} + "_tabela.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

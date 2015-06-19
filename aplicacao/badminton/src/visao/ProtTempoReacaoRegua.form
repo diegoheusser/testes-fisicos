@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel2" min="-2" pref="297" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" alignment="0" pref="616" max="32767" attributes="0"/>
+                  <Component id="lbLink" alignment="1" pref="616" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="165" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lbLink" min="-2" pref="89" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbLink">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style=&quot;font-size: 11px;&quot;&gt;&lt;b&gt;Refer&#xea;ncias:&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot; text-align:justify;&quot;&gt; Topend Sport. Make your own Reaction Timer. Dispon&#xed;vel em:&lt;br&gt;  &lt;a href=&quot;http://www.topendsports.com/testing/reactionmake.htm &quot; target=_blank&gt; http://www.topendsports.com/testing/reactionmake.htm&lt;/a&gt;&lt;br&gt;  Acesso em : 14/08/2013.&lt;/p&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor em Forma de M&#xe3;o"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/visao/imagens/tempodereacaoregua.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;b&gt;Equipamentos:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;- Um peda&#xe7;o de papel ou cart&#xe3;o grosso, de aproximadamente 20 cm de comprimento e 5 cm de largura.&#xa;&lt;br&gt;- Uma r&#xe9;gua&#xa;&lt;br&gt;- Uma caneta ou l&#xe1;pis&#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Descri&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;Ter um amigo para segurar a r&#xe9;gua criada no topo, alinhar seus dedos com a borda inferior da r&#xe9;gua criada. O amigo solta a r&#xe9;gua a qualquer momento, sem aviso pr&#xe9;vio, e voc&#xea; tenta agarra a r&#xe9;gua entre os dedos (Sem mover a sua m&#xe3;o do lugar). &#xa;&lt;br&gt;&lt;br&gt;&lt;b&gt;Pontua&#xe7;&#xe3;o:&lt;/b&gt;&#xa;&lt;br&gt;&lt;br&gt;Para ver a sua pontua&#xe7;&#xe3;o basta marcar em que ponto da r&#xe9;gua voc&#xea; agarrou.&#xa;&lt;/html&gt;"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
